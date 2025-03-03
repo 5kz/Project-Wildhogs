@@ -3,3 +3,9 @@
     display: flex;
     border:solid red;
 }
+
+.header{
+    display: flex;
+    height:200px;
+    background-color: red;
+}
