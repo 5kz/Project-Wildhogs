@@ -1,62 +1,87 @@
-.main{
-    height:100vh;
-    display: flex;
-    border:solid red;
+body {
+  overflow-x:hidden;
+  color:#FFF;
+  font-family:Helvetica;
+  font-size:200%;
 }
+
+*{
+  margin:0;
+  padding:0;
+}
+
+
+/* 
+
+Primära färger (Rustik & Modern)
+Mörkbrun (#3D2B1F) – För att skapa en rustik träkänsla.
+Dov Orange (#D97904) – En varm accentfärg som påminner om läder och eld.
+Sekundära färger (Naturliga toner)
+Sandbeige (#E6D5B8) – Bakgrundsfärg för en mjuk, naturlig känsla.
+Skogsgrön (#476A2E) – En mörkgrön som ger en organisk touch.
+Kompletterande färger (För interaktion & kontrast)
+Mörkgrå (#2C2C2C) – För texter och detaljer där svart skulle kännas för hårt.
+Ljusgrå (#A8A8A8) – Subtila hover-effekter och bakgrunder till pris- eller produktinfo.
+Färgschemat kombinerar en modern, mörk look med varma, jordnära toner för att behålla en rustik känsla. Perfekt för en stilren, men samtidigt robust hemsida
+
+*/
 
 .header{
-    display: flex;
-    height:200px;
-    background-color: red;
+  position: fixed;
+  height:10vh;
+  background-color: #3D2B1F;
+  width:100%;
+  left:0;
+  top:0;
+  z-index: 100;
 }
 
+
+
+#page {
+  overflow:hidden;
+  white-space:nowrap;
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:#CCC;
+  display:flex;
+  flex-wrap:no-wrap;
+}
+
+.pane {
+  flex:0 0 100vw;
+  height:100vh;
+  display:flex;
+  position:relative;
+  align-items:center;
+  justify-content:center;
+  background-color: #45CCFF;
+}
+
+.pane:nth-child(4n+2)  {
+  background-color: #49E83E;
+}
+
+.pane:nth-child(4n+3)  {
+  background-color: #EDDE05;
+}
+
+.pane:nth-child(4n+4)  {
+  background-color: #E84B30;
+}
+
+.pane:last-child {
+  background-color: #45CCFF;
+}
 
 .footer{
-    background-color: #1C1F33;
-    color: #fff;
-    font-family: 'Lora', serif;
-    padding: 30px;
-    margin-top: 0px;
-    
-}
-
-.footerinfo{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-
-.kortinfo h2{
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.foretagsinfo h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.foretagsinfo a{
-    color: #B76E79;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.foretagsinfo a:hover {
-    text-decoration: underline;
-}
-
-.loggafooter img {
-    max-width: 120px;
-    height: auto;
-}
-
-.botten {
-    text-align: center;
-    margin-top: 20px;
-    border-top: 1px solid #B76E79;
-    padding-top: 10px;
+  width:100%;
+  height: 10vh;
+  background-color: #3D2B1F;
+  position: fixed;
+  left:0;
+  bottom: 0;
+  z-index: 100;
 }
