@@ -137,15 +137,113 @@ Färgschemat kombinerar en modern, mörk look med varma, jordnära toner för at
   left:0;
   bottom: 0;
   z-index: 100;
+  font-family: "Colossalis Black";
+  font-size: 2vh;
+  display: flex;
+  align-items: center;
+}
+
+.kontakt{
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap:1.5vh;
+}
+
+.footerright{
+  position: absolute;
+  right: 20px;
+  text-align: center;
+}
+
+.footer a{
+  color:white;
+  transition-duration: 0.3s;
+}
+
+.footer a:hover{
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 4px rgba(255, 255, 0, 0.481), 0 0px 7px #ff80007b, 0 0px 10px rgba(255, 0, 0, 0.464);
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 950px) {
+  .loggacontainer img {
+    width:20vh;
+  }
+
+  .header a{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 950px) and (min-width: 600px) {
+  .loggacontainer img {
+    width:10vh;
+  }
+
+  .header a{
+    font-size: 20px;
+  }
+
+  .kontakt{
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 10px;
+    display:block;
+  }
+
+  .headerright{
+    font-size: 18px;
+  }
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) and (min-width: 400px) {
   .loggacontainer img {
     width:0;
   }
 
   .header a{
     font-size: 20px;
+  }
+
+  .kontakt{
+    display:none;
+  }
+
+  
+  .footerright{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    right: 0px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .loggacontainer img {
+    width:0;
+  }
+
+  .header a{
+    font-size: 12px;
+  }
+
+  .kontakt{
+    display:none;
+  }
+
+  .footerright{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    right: 0px;
   }
 }
