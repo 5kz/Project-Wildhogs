@@ -1,5 +1,9 @@
 @import url('https://fonts.cdnfonts.com/css/flapdoodle');
 @import url(https://db.onlinewebfonts.com/c/086c09b345acadb750be74185af9afbe?family=Colossalis+Black);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
 
 body {
   overflow-x:hidden;
@@ -28,6 +32,11 @@ Mörkgrå (#2C2C2C) – För texter och detaljer där svart skulle kännas för 
 Ljusgrå (#A8A8A8) – Subtila hover-effekter och bakgrunder till pris- eller produktinfo.
 Färgschemat kombinerar en modern, mörk look med varma, jordnära toner för att behålla en rustik känsla. Perfekt för en stilren, men samtidigt robust hemsida
 
+
+Fonts:
+Roboto Slab
+Bebas Neue
+Oswald
 */
 
 .header{
@@ -80,8 +89,6 @@ Färgschemat kombinerar en modern, mörk look med varma, jordnära toner för at
   color: #faf5ed;
 }
 
-
-
 .headerright{
   width:auto;
   position: absolute;
@@ -106,12 +113,14 @@ Färgschemat kombinerar en modern, mörk look med varma, jordnära toner för at
 .pane {
   flex:0 0 100vw;
   height:100vh;
-  display:flex;
+  display:inline-block;
+  flex-flow: row wrap; 
   position:relative;
   align-items:center;
   justify-content:center;
   background-color: #45CCFF;
 }
+
 
 .pane:nth-child(4n+2)  {
   background-color: #49E83E;
@@ -137,7 +146,7 @@ Färgschemat kombinerar en modern, mörk look med varma, jordnära toner för at
   left:0;
   bottom: 0;
   z-index: 100;
-  font-family: "Colossalis Black";
+  font-family: 'Roboto Slab', serif;
   font-size: 2vh;
   display: flex;
   align-items: center;
@@ -166,6 +175,69 @@ Färgschemat kombinerar en modern, mörk look med varma, jordnära toner för at
 .footer a:hover{
   text-shadow: 0 -1px 4px #FFF, 0 -2px 4px rgba(255, 255, 0, 0.481), 0 0px 7px #ff80007b, 0 0px 10px rgba(255, 0, 0, 0.464);
 }
+
+/* FOOTER & HEADER ÖVER */
+
+
+
+.pane:nth-child(1){
+    background-image: url(bilder/free-photo-of-man-sitting-on-a-harley-davidson-motorcycle-on-the-road.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.518);
+    background-blend-mode: multiply;
+
+}
+
+.pane:nth-child(1) h1{
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+}
+
+.pane:nth-child(1) h2{
+  font-family: 'Roboto Slab', serif;
+  font-size: 30px;
+  width:100vw;
+}
+
+
+
+/* Integritetspolicy och sekretess under */
+
+.integritespolicy{
+  color: black;
+  font-family: 'Roboto Slab';
+  
+}
+
+.titelsekint{
+  color: black;
+  font-family: 'Roboto Slab';
+}
+
+.headerdivider{
+  height: 10vh;
+  position:sticky;
+  top:0;
+  width: 100%;
+}
+
+.footerdivider{
+  height: 10vh;
+  position:sticky;
+  bottom:0;
+  width: 100%;
+}
+
+.textcontainer{
+  padding:20vh;
+}
+
+
+
+
+/* SIZING UNDER */
 
 @media only screen and (max-width: 1200px) and (min-width: 950px) {
   .loggacontainer img {
