@@ -113,7 +113,7 @@ Oswald
 .pane {
   flex:0 0 100vw;
   height:100vh;
-  display:inline-block;
+  display:block;
   flex-flow: row wrap; 
   position:relative;
   align-items:center;
@@ -193,22 +193,33 @@ Oswald
 .pane:nth-child(1) h1{
   font-family: 'Bebas Neue', sans-serif;
   text-transform: uppercase;
+  text-shadow: 5px 5px 10px 10px black;
+  font-size: 8vh;
+  margin-left: 5vh;
+  inline-size: 90vw;
 }
 
 .pane:nth-child(1) h2{
+  margin-left: 5vh;
   font-family: 'Roboto Slab', serif;
-  font-size: 30px;
+  font-size: 3vh;
   width:100vw;
+  text-shadow: 5px 5px 10px 10px black;
+  inline-size: 90vw;
 }
 
-
+.textpane1{
+  text-align: center;
+  margin-top: 35vh;
+  text-wrap: pretty;
+}
 
 /* Integritetspolicy och sekretess under */
 
 .integritespolicy{
   color: black;
   font-family: 'Roboto Slab';
-  
+  font-size: 3vh;
 }
 
 .titelsekint{
@@ -268,6 +279,11 @@ Oswald
   .headerright{
     font-size: 18px;
   }
+
+
+  .textpane1{
+    margin-top: 25vh;
+  }
 }
 
 
@@ -294,6 +310,18 @@ Oswald
     width: 50%;
     right: 0px;
   }
+
+  .textpane1{
+    margin-top: 25vh;
+  }
+
+  .pane:nth-child(1) h1{
+    margin-left: 2vh;
+  }
+
+  .pane:nth-child(1) h2{
+    margin-left: 2vh;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -317,5 +345,18 @@ Oswald
     margin: auto;
     width: 50%;
     right: 0px;
+  }
+
+  .textpane1{
+    margin-top: 20vh;
+  }
+
+
+  .pane:nth-child(1) h1{
+    margin-left: 2vh;
+  }
+
+  .pane:nth-child(1) h2{
+    margin-left: 2vh;
   }
 }
