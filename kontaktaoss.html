@@ -30,6 +30,37 @@
 
 
     </div>
+
+    <div class="headerdivider"></div>
+
+    <div class="formcontainer">
+        
+        <form action="" method="post">
+            <div class="form-input">
+                <label for="namn">Namn</label>
+                <input type="text" name="namn" placeholder="Vänligen skriv ditt namn" required=""> 
+            </div>
+            <div class="form-input">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Vänligen skriv din email" required="">
+            </div>
+            <div class="form-input">
+                <label for="questiontype">Ämne</label>
+                <select name="questiontype" id="questiontype">
+                    <option value="Produktfraga">Produktfråga</option>
+                    <option value="Reklamera">Reklamera</option>
+                    <option value="Ovrigt">Övrigt</option>
+                </select>
+            </div>
+            <div class="form-input">
+                <label for="extrainfo">Meddelande</label>
+                <input type="text" name="message" placeholder="Ditt meddlande" required="">
+            </div>
+            <input type="submit" name="submit" class="submitbutton" value="Skicka in">
+        </form>
+    </div>
+
+    <div class="footerdivider"></div>
       
     <div class="footer">
         <div class="kontakt">

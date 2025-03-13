@@ -181,6 +181,7 @@ Oswald
 
 
 .pane:nth-child(1){   
+    background-image: url("bilder/free-photo-of-man-sitting-on-a-harley-davidson-motorcycle-on-the-road.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -245,8 +246,145 @@ Oswald
 }
 
 
+/* Kontakta oss */
+
+.formcontainer{
+  background-color: #FAFAFA;
+  padding: 40px;
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto Slab', serif;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-input{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-input label{
+  font-size: 18px;
+  font-weight: bold;
+  color: #1C1F33;
+}
+
+.form-input input, .form-input select{
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #E6D5B8;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.form-input input:focus, .form-input select:focus{
+  border-color: #1C1F33;
+  outline: none;
+}
+
+.submitbutton{
+  background-color: #E6D5B8;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.submitbutton:hover{
+  background-color: #3D2B1F;
+}
 
 
+/* MERCH PAGE UNDER */
+
+
+
+.merchheader{
+  font-family: "Colossalis Black";
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  letter-spacing: 1vh;
+  text-shadow: 0px 0px 10px black;
+}
+
+.products {
+  border: solid 5px #3D2B1F;
+  background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3B4NzY0OTU1LWltYWdlLWt3dnhlMmNsLmpwZw.jpg);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 50px;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.product {
+  border: solid 5px #3d2b1f66;
+  background: #3d2b1fe3;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+.products button {
+  font-family: 'Bebas Neue', sans-serif;
+  background: #a0522d;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin:0;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 0.8em;
+  transition-duration: 0.3s;
+}
+.products button:hover {
+  background: #8b4513;
+}
+
+.products h2{
+  font-family: 'Roboto Slab', serif;
+  font-size: 3vh;
+}
+
+.products p{
+  font-family: 'Roboto Slab', serif;
+  font-size: 3vh;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.background{
+  height:100%;
+  padding-bottom: 20vh;
+  background-image: url(bilder/pexels-photo-2611691.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
 /* SIZING UNDER */
 
 @media only screen and (max-width: 1200px) and (min-width: 950px) {
