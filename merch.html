@@ -35,47 +35,70 @@
     <div class="merchheader">
         <h1>Våran Merch</h1>
     </div>
-    <main>
-        <div class="products">
-            <div class="product">
-                <img src="/bilder/Hog_chef_hat.jpeg" alt="Wildhogs kockhatt">
-                <h2>Wildhogs Kockhatt</h2>
-                <p>349.00 kr</p>
-                <button>Lägg till i varukorgen</button>
-            </div>
-            <div class="product">
-                <img src="/bilder/Hog_cap.jpeg" alt="Wildhogs hatt">
-                <h2>Wildhogs keps</h2>
-                <p>200.00 kr</p>
-                <button>Lägg till i varukorgen</button>
-            </div>
-            <div class="product">
-                <img src="/bilder/Hog_plushie.jpeg" alt="Wildhogs gossedjur">
-                <h2>Wildhogs Gossedjur</h2>
-                <p>350.00 kr</p>
-                <button>Lägg till i varukorgen</button>
-            </div>
-            <div class="product">
-                <img src="/bilder/Hog_sauce.jpeg" alt="Wildhogs ketchup">
-                <h2>Wildhogs Ketchup</h2>
-                <p>139.00 kr</p>
-                <button>Lägg till i varukorgen</button>
-            </div>
-            <div class="product">
-                <img src="/bilder/Hog_boardiron.jpeg" alt="">
-                <h2>Wildhogs stekspade</h2>
-                <p>150.00 kr</p>
-                <button>Lägg till i varukorgen</button>
-            </div>
-            <div class="product">
-                <img src="/bilder/Hog_iron.jpeg" alt="Product 6">
-                <h2>Wildhogs Brännjärn</h2>
-                <p>345.00 kr</p>
-                <button>Lägg till i varukorgen</button>
+
+    <div class="products">
+        <div class="product">
+            <img src="/bilder/Hog_chef_hat.jpeg" alt="Wildhogs kockhatt">
+            <h2>Wildhogs Kockhatt</h2>
+            <p class="price">349.00 kr</p>
+            <button onclick="addToCart(349)">Lägg till i varukorgen</button>
+            <div class="product-info">
+                <p>En stilren kockhatt med Wildhogs-logotypen, perfekt för alla grillmästare!</p>
             </div>
         </div>
-    </main>
-
+        <div class="product">
+            <img src="/bilder/Hog_cap.jpeg" alt="Wildhogs hatt">
+            <h2>Wildhogs keps</h2>
+            <p class="price">200.00 kr</p>
+            <button onclick="addToCart(200)">Lägg till i varukorgen</button>
+            <div class="product-info">
+                <p>En slitstark och justerbar keps med broderad logga för en rustik och stilren look.</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="/bilder/Hog_plushie.jpeg" alt="Wildhogs gossedjur">
+            <h2>Wildhogs Gossedjur</h2>
+            <p class="price">350.00 kr</p>
+            <button onclick="addToCart(350)">Lägg till i varukorgen</button>
+            <div class="product-info">
+                <p>Ett mjukt och gosigt vildsvin, perfekt för alla åldrar!</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="/bilder/Hog_sauce.jpeg" alt="Wildhogs ketchup">
+            <h2>Wildhogs Ketchup</h2>
+            <p class="price">139.00 kr</p>
+            <button onclick="addToCart(139)">Lägg till i varukorgen</button>
+            <div class="product-info">
+                <p>En fyllig och smakrik ketchup med en rustik twist, perfekt till alla måltider!</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="/bilder/Hog_boardiron.jpeg" alt="">
+            <h2>Wildhogs stekspade</h2>
+            <p class="price">150.00 kr</p>
+            <button onclick="addToCart(150)">Lägg till i varukorgen</button>
+            <div class="product-info">
+                <p>Robust och stilren, perfekt för grill och kök!</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="/bilder/Hog_iron.jpeg" alt="Product 6">
+            <h2>Wildhogs Brännjärn</h2>
+            <p class="price">345.00 kr</p>
+            <button onclick="addToCart(345)">Lägg till i varukorgen</button>
+            <div class="product-info">
+                <p>Hållbart och pålitligt för tydlig och säker märkning av djur.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cart">
+        <h2>Varukorg</h2>
+        <p>Totalt: <div id="total">0.00 kr</div></p>
+        <button onclick="clearCart()">Rensa varukorg</button>
+    </div>
+    
 
       
     <div class="footer">
