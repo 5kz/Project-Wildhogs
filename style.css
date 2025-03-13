@@ -180,8 +180,7 @@ Oswald
 
 
 
-.pane:nth-child(1){
-    background-image: url(bilder/free-photo-of-man-sitting-on-a-harley-davidson-motorcycle-on-the-road.jpeg);
+.pane:nth-child(1){   
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
