@@ -190,6 +190,17 @@ Oswald
 
 }
 
+.pane:nth-child(4){   
+  background-image: url("bilder/bikergang.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.518);
+  background-blend-mode: multiply;
+
+}
+
+
 .pane:nth-child(1) h1{
   font-family: 'Bebas Neue', sans-serif;
   text-transform: uppercase;
@@ -213,6 +224,116 @@ Oswald
   margin-top: 35vh;
   text-wrap: pretty;
 }
+
+.textpane2{
+  text-align: center;
+  margin-top:25vh;
+  text-wrap: pretty;
+  padding:15vh;
+  padding-top:0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 3.2vh;
+}
+
+.textpane4{
+  text-align: center;
+  margin-top:25vh;
+  text-wrap: pretty;
+  padding:15vh;
+  padding-top:0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 3.2vh;
+}
+
+
+.textpane3{
+  text-align: center;
+  margin-top:25vh;
+  text-wrap: pretty;
+  margin-left: 5vh;
+  font-family: 'Roboto Slab', serif;
+  font-size: 3vh;
+  width:100vw;
+  text-shadow: 5px 5px 10px 10px black;
+  inline-size: 90vw;
+}
+
+.textpane3 h2{
+  margin-bottom: 40px;
+  font-size: 7vh;
+}
+
+
+.textpane3 h3{
+  margin-bottom: 10px;
+  font-size: 4vh;
+}
+
+.bilder{
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  gap:1vh;
+  
+}
+
+.bilder img{
+  width:40vh;
+  border: 4px solid #291d15;
+  border-radius: 1vh;
+}
+
+.textpane3 a{
+  text-decoration: none;
+  background-color: rgb(86, 60, 18);
+  color:white;
+  padding:15px;
+  font-family: 'Roboto Slab', serif;
+  transition-duration: 0.3s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px black;
+}
+
+.textpane3 a:hover{
+  background-color: #291d15;
+}
+
+.textpane4 a{
+  text-decoration: none;
+  background-color: rgb(86, 60, 18);
+  color:white;
+  padding:15px;
+  font-family: 'Roboto Slab', serif;
+  transition-duration: 0.3s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px black;
+}
+
+.textpane4 a:hover{
+  background-color: #291d15;
+}
+
+
+.pane:nth-child(3){   
+  background-image: url("bilder/svinya-priroda-fon-3521.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.518);
+  background-blend-mode: multiply;
+
+}
+
+.pane:nth-child(2){   
+  background-image: url("bilder/textpane2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.518);
+  background-blend-mode: multiply;
+
+}
+
 
 /* Integritetspolicy och sekretess under */
 
@@ -382,6 +503,7 @@ form{
   margin: auto;
   margin-bottom: 100px;
 }
+
 .product {
   border: solid 5px #3d2b1f66;
   background: #3d2b1fe3;
@@ -459,8 +581,8 @@ form{
 }
 
 .product-info {
-  position: absolute;
-  bottom: 50;
+  position: fixed;
+  bottom: 100px;
   left: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.8);
@@ -484,6 +606,14 @@ form{
 
   .header a{
     font-size: 20px;
+  }
+
+  .textpane2{
+    font-size: 2.5vh;
+  }
+
+  .textpane3{
+    font-size: 2.5vh;
   }
 }
 
@@ -510,6 +640,14 @@ form{
 
   .textpane1{
     margin-top: 25vh;
+  }
+
+  .textpane2{
+    font-size: 2vh;
+  }
+
+  .textpane3{
+    font-size: 2vh;
   }
 }
 
@@ -549,6 +687,13 @@ form{
   .pane:nth-child(1) h2{
     margin-left: 2vh;
   }
+
+  .textpane2{
+    font-size: 2vh;
+  }
+  .textpane3{
+    font-size: 2vh;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -578,6 +723,9 @@ form{
     margin-top: 20vh;
   }
 
+  .textpane2{
+    font-size: 2vh;
+  }
 
   .pane:nth-child(1) h1{
     margin-left: 2vh;
@@ -585,5 +733,9 @@ form{
 
   .pane:nth-child(1) h2{
     margin-left: 2vh;
+  }
+
+  .textpane3{
+    font-size: 2vh;
   }
 }
